@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	double a, x, n; 
+	int i ;
+	
+	printf("Vvedite chislo x:");
+	scanf("%lf", &x);
+	printf("Vvedite chislo  a: ");
+	scanf("%lf", &a);
+	
+	n = x * 2;
+	
+	while(x < n) {
+		i++;
+		x = x+((x / 100)*a);
+	}
+	printf ("Kilkist rokiv %d  %lf\n", i,x);
+	
+
+	
+	return 0;
+}
